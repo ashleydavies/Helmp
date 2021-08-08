@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Helmp</title>
+		<style>
+			body {
+				background-color: #F5F5FF;
+				font-family: arial;
+			}
+			.flex-outer {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: center;
+			}
+			.flex-outer>div {
+				flex: 1;
+				min-width: 800px;
+			}
+			textarea {
+				border-radius: 10px;
+				border: 1px solid #333333;
+				padding: 10px;
+				width: 90%;
+				margin: auto;
+				font-size: 18px;
+				font-family: "Courier New";
+			}
+			.output {
+				font-family: "Courier New";
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Helmp</h1>
+		<h2>Helm Helper</h2>
+		<div class="flex-outer">
+			<div>
+				<h3>Template</h3>
+				<textarea id="template" rows="30"></textarea>
+			</div>
+			<div>
+				<h3>Values</h3>
+				<textarea id="values" rows="30"></textarea>
+			</div>
+		</div>
+		<h2>Output</h2>
+		<pre id="output"></pre>
+		<script type="text/javascript" src="Helmp.js"></script>
+	</body>
+</html>
